@@ -60,11 +60,16 @@ public class GroupCommand extends Command {
                         .getName().fullName))
                 .toList();
 
+
+
         if (groupMembers.isEmpty()) {
             throw new CommandException(MESSAGE_NO_STUDENTS_FOUND);
         }
         // Append to a group object
         Group group = new Group(groupName, groupMembers);
+
+        //Defensive programming to make each person's group field the group
+        groupMembers.forEach(person -> person.setGroups(group));
 
         // Add the group object to the model
         model.addGroup(group);

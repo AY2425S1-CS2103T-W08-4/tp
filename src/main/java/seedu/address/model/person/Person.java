@@ -94,6 +94,25 @@ public class Person {
     }
 
     /**
+     * Returns an immutable group set, which throws {@code UnsupportedOperationException}
+     * if modification is attempted.
+     */
+    public Set<Group> getGroups() {
+        return Collections.unmodifiableSet(groups);
+    }
+
+    /**
+     * Adds a group to the group field of the person.
+     * @param group
+     */
+    public void setGroups(Group group) {
+        requireAllNonNull(group);
+
+        groups.add(group);
+
+    }
+
+    /**
      * Returns true if both persons have the same identity and data fields.
      * This defines a stronger notion of equality between two persons.
      */
