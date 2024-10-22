@@ -3,6 +3,7 @@ package seedu.address.testutil;
 import java.util.HashSet;
 import java.util.Set;
 
+import seedu.address.model.group.Group;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
@@ -24,6 +25,7 @@ public class PersonBuilder {
     private Phone phone;
     private Set<Tag> tags;
 
+    private Set<Group> groups;
     /**
      * Creates a {@code PersonBuilder} with the default details.
      */
@@ -42,6 +44,7 @@ public class PersonBuilder {
         studentClass = personToCopy.getStudentClass();
         phone = personToCopy.getPhone();
         tags = new HashSet<>(personToCopy.getTags());
+        groups = new HashSet<>();
     }
 
     /**

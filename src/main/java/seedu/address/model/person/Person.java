@@ -131,13 +131,14 @@ public class Person {
         return name.equals(otherPerson.name)
                 && studentClass.equals(otherPerson.studentClass)
                 && phone.equals(otherPerson.phone)
-                && tags.equals(otherPerson.tags);
+                && tags.equals(otherPerson.tags)
+                && groups.equals(otherPerson.groups);
     }
 
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
-        return Objects.hash(name, studentClass, phone, tags);
+        return Objects.hash(name, studentClass, phone, tags, groups);
     }
 
     @Override
@@ -147,6 +148,7 @@ public class Person {
                 .add("studentClass", studentClass)
                 .add("phone", phone)
                 .add("tags", tags)
+                .add("groups", groups)
                 .toString();
     }
 

@@ -22,6 +22,12 @@ checkstyle {
 
 test {
     useJUnitPlatform()
+    jvmArgs += [
+            '--add-exports=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED',
+            '--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED',
+            '--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED',
+            '--add-exports=javafx.base/com.sun.javafx.event=ALL-UNNAMED'
+    ]
     finalizedBy jacocoTestReport
 }
 
@@ -43,6 +49,7 @@ task coverage(type: JacocoReport) {
 dependencies {
     String jUnitVersion = '5.4.0'
     String javaFxVersion = '17.0.7'
+    String testFxVersion = '4.0.16-alpha'
 
     implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'win'
     implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'mac'
@@ -61,8 +68,15 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.7.4'
     implementation 'org.json:json:20211205'
 
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: jUnitVersion
+    // TestFX dependencies for UI testing
+    testImplementation "org.testfx:testfx-core:${testFxVersion}"
+    testImplementation "org.testfx:testfx-junit5:${testFxVersion}"
 
+    // Use Monocle for headless testing if needed
+    testRuntimeOnly "org.testfx:openjfx-monocle:jdk-11+26"
+
+    // Junit Jupiter for testing
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: jUnitVersion
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: jUnitVersion
 }
 
