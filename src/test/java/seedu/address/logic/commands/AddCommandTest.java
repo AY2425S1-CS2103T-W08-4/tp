@@ -198,7 +198,11 @@ public class AddCommandTest {
         }
 
         @Override
-        public List<Group> updateFilteredGroupList(GroupContainsKeywordsPredicate groupPredicate) {
+        public ObservableList<Group> getFilteredGroupList() {
+            throw new AssertionError("This method should not be called.");
+        }
+        @Override
+        public void updateFilteredGroupList(Predicate<Group> groupPredicate) {
             throw new AssertionError("This method should not be called");
         }
     }
