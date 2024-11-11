@@ -312,12 +312,11 @@ Examples:
 - `find alex dav`
   - Returns `Alex Yeoh`
 
-<div style="page-break-after: always"></div>
-
-
 #### Tips for Effective Use
 
 - Use the `list` command to display all students again.
+
+<div style="page-break-after: always"></div>
 
 ## Managing groups
 
@@ -423,8 +422,6 @@ Examples:
 - `tag 100 t/hardworking`
   - If contains fewer than 100 students, returns `The person index provided is invalid`
 
-<div style="page-break-after: always"></div>
-
 ### Deleting a tag : `untag`
 
 Deletes a tag of a specified student.
@@ -445,6 +442,7 @@ Examples:
 - `untag 1 t/qquiet`
   - Returns `The tag(s) does not exist`
 
+<div style="page-break-after: always"></div>
 
 ## Importing and Exporting Data
 
