@@ -179,8 +179,6 @@ Besides the main window, GoonBook also has the Help Window. It is not part of th
 - If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
 </div>
 
-<div style="page-break-after: always"></div>
-
 ## Getting Help
 
 ### Viewing help : `help`
@@ -190,8 +188,6 @@ Shows a message explaining how to access the help page.
 Format: `help`
 
 ![help message](images/Help.png)
-
-<div style="page-break-after: always"></div>
 
 ## Managing Students
 
@@ -227,8 +223,6 @@ Examples:
 - `add n/Beh Wen Jie c/S09 p/###`
   - Returns `Phone numbers should only contain numbers, and it should be at least 3 digits long`
 
-<div style="page-break-after: always"></div>
-
 ### Listing all students : `list`
 
 Shows a list of all students in the GoonBook.
@@ -236,8 +230,6 @@ Shows a list of all students in the GoonBook.
 Format: `list`
 
 ![List](images/List.png)
-
-<div style="page-break-after: always"></div>
 
 ### Editing a student : `edit`
 
@@ -272,8 +264,6 @@ Examples:
 - `edit 1 c/W-08`
   - Returns `Student's class names cannot be empty and should be alphanumeric`
 
-<div style="page-break-after: always"></div>
-
 ### Deleting a student : `delete`
 
 Deletes the specified student from the GoonBook.
@@ -294,8 +284,6 @@ Examples:
   - Successfully deletes the 1st person in the results of the `find` command.
 - `delete 100`
   - If contains fewer than 100 students, returns `The index provided is greater than the max students`
-
-<div style="page-break-after: always"></div>
 
 ### Locating students by name: `find`
 
@@ -326,8 +314,6 @@ Examples:
 
 - Use the `list` command to display all students again.
 
-<div style="page-break-after: always"></div>
-
 ## Managing groups
 
 ## Listing all groups : `listGroups`
@@ -337,8 +323,6 @@ Shows a list of all groups in the Goon Book.
 Format: `listGroups`
 
 ![ListGroup](images/ListGroups.png)
-
-<div style="page-break-after: always"></div>
 
 ### Grouping students together: `group`
 
@@ -366,8 +350,6 @@ If the group contains `Alice Pauline` and `Benson Meier`,
 
 **Note:** The group command requires exact, case-sensitive matches for student names. Double-check the names before executing the command to ensure the group is created successfully.
 
-<div style="page-break-after: always"></div>
-
 ### Locating groups by name: `findGroup`
 
 Finds existing group(s) whose name contains the given keyword.
@@ -392,8 +374,6 @@ Examples:
 #### Tips for Effective Use
 
 - Use the `listGroups` command to display all groups again.
-
-<div style="page-break-after: always"></div>
 
 ### Deleting a group : `deleteGroup`
 
@@ -491,8 +471,6 @@ Examples:
 
 **Warning:** When importing students with the import command, ensure that the CSV file is correctly formatted and contains valid data. Improper formatting may cause the import to fail or lead to data corruption.
 
-<div style="page-break-after: always"></div>
-
 ### Export students: `export`
 
 Exports all students in GoonBook to a .csv file.
@@ -504,13 +482,11 @@ Format: `export`
 
 ![Export](images/Export.png)
 
-<div style="page-break-after: always"></div>
 
 ### Exported csv data file location
 
 GoonBook csv data files are saved automatically as a .csv file at `[JAR file location/data/exported_data.csv]`.
 
-<div style="page-break-after: always"></div>
 
 ## Data Management
 
@@ -523,8 +499,6 @@ Format: `clear`
 ![Clear](images/Clear.png)
 
 **Warning:** The `clear` command has no confirmation prompt and will delete all data immediately. Use with caution.
-
-<div style="page-break-after: always"></div>
 
 ## Exiting the Program
 
