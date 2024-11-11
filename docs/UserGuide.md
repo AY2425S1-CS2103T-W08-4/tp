@@ -319,6 +319,9 @@ Examples:
 - `find alex dav`
   - Returns `Alex Yeoh`
 
+<div style="page-break-after: always"></div>
+
+
 #### Tips for Effective Use
 
 - Use the `list` command to display all students again.
@@ -457,7 +460,6 @@ Examples:
 - `untag 1 t/qquiet`
   - Returns `The tag(s) does not exist`
 
-<div style="page-break-after: always"></div>
 
 ## Importing and Exporting Data
 
