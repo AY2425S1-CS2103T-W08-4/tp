@@ -27,7 +27,7 @@ public class HelpWindow extends UiPart<Stage> {
             + "8. list\n"
             + "9. clear\n"
             + "10. group\n"
-            + "11. groups\n"
+            + "11. listGroups\n"
             + "12. findGroup\n"
             + "13. deleteGroup\n"
             + "14. export\n"
