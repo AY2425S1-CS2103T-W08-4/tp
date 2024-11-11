@@ -15,6 +15,8 @@ GoonBook is a **modern desktop application designed for educators to efficiently
 
 Perfect for educators who value efficiency and prefer keyboard-based interactions. With GoonBook, managing your student records becomes faster, simpler, and more organized than traditional GUI-only applications.
 
+<div style="page-break-after: always"></div>
+
 ## **Table of Contents**
 
 1. [Getting Started](#getting-started)
@@ -56,6 +58,8 @@ Perfect for educators who value efficiency and prefer keyboard-based interaction
 17. [Acknowledgements](#acknowledgements)
 
 ---
+
+<div style="page-break-after: always"></div>
 
 ## How to Use This Guide
 
