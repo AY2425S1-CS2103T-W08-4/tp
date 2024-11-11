@@ -181,7 +181,6 @@ Besides the main window, GoonBook also has the Help Window. It is not part of th
 
 <div style="page-break-after: always"></div>
 
-
 ## Getting Help
 
 ### Viewing help : `help`
@@ -227,6 +226,8 @@ Examples:
   - Returns `Student's class names cannot be empty and should be alphanumeric`
 - `add n/Beh Wen Jie c/S09 p/###`
   - Returns `Phone numbers should only contain numbers, and it should be at least 3 digits long`
+
+<div style="page-break-after: always"></div>
 
 ### Listing all students : `list`
 
