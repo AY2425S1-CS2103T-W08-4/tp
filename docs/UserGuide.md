@@ -329,6 +329,8 @@ Format: `listGroups`
 
 ![ListGroup](images/ListGroups.png)
 
+<div style="page-break-after: always"></div>
+
 ### Grouping students together: `group`
 
 Groups students together.
@@ -354,6 +356,8 @@ If the group contains `Alice Pauline` and `Benson Meier`,
   - Returns `The following students could not be found: ali`
 
 **Note:** The group command requires exact, case-sensitive matches for student names. Double-check the names before executing the command to ensure the group is created successfully.
+
+<div style="page-break-after: always"></div>
 
 ### Locating groups by name: `findGroup`
 
@@ -443,8 +447,6 @@ Examples:
 - `untag 1 t/qquiet`
   - Returns `The tag(s) does not exist`
 
-<div style="page-break-after: always"></div>
-
 ## Importing and Exporting Data
 
 ### Import students: `import`
@@ -475,6 +477,8 @@ Examples:
 
 **Warning:** When importing students with the import command, ensure that the CSV file is correctly formatted and contains valid data. Improper formatting may cause the import to fail or lead to data corruption.
 
+<div style="page-break-after: always"></div>
+
 ### Export students: `export`
 
 Exports all students in GoonBook to a .csv file.
@@ -491,6 +495,7 @@ Format: `export`
 
 GoonBook csv data files are saved automatically as a .csv file at `[JAR file location/data/exported_data.csv]`.
 
+<div style="page-break-after: always"></div>
 
 ## Data Management
 
